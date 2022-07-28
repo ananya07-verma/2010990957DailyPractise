@@ -1,0 +1,16 @@
+body {
+    background: linear-gradient(to bottom, rgb(204, 229, 255), rgba(204, 229, 255, 0.4));
+    font-size: 1.15em;
+    text-align: justify;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+tr #th1Heading {
+    background-color: bisque;
+    color: tomato;
+}
+
+table th,
+td {
+    border: 1px solid black;
+}
