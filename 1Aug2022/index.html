@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <p id="p1">Hello World</p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+    <p id="p4"></p>
+    <p id="p5"></p>
+    <p id="p6"></p>
+
+</body>
+<script>
+    alert("Hello JavaScript");
+
+    var price1 = 5;
+    var price2 = 8;
+    var total = price1 + price2;
+    document.getElementById("p1").innerHTML = "Total is" + total;
+
+    // concatenates the strings  without spaces , if u wanna add spaces the use " "
+    var firstName = "John";
+    var lastName = "Doe";
+    document.getElementById("p2").innerHTML = firstName + " " + lastName;
+
+    var n1 = "5";
+    var n2 = 6;
+    document.getElementById("p3").innerHTML = n1 + n2; //Still concatenates it to string when one is string and other is num
+
+    var num1 = Number("5");
+    var num2 = 6;
+    document.getElementById("p4").innerHTML = num1 + num2; //now this adds the nums
+
+    //Objects in js are key value pairs
+    let person = {
+        firstName: "john",
+        lastName: "Doe",
+        age: 30,
+        eyeColor: "blue"
+    };
+
+    document.getElementById("p5").innerHTML = person.firstName + "Age is:" + person.age + "Eyecolor:" + person.eyeColor;
+
+    var n = Number("123");
+    n = n + 2;
+    var s = "2";
+    s = n + s;
+    document.getElementById("p6").innerHTML = "Value of s :" + " " + s;
+</script>
+
+</html>
