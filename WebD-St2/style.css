@@ -1,0 +1,40 @@
+body {
+    background-color: hwb(148 80% 0%);
+}
+
+#main {
+    width: 80%;
+    height: 28rem;
+    background-color: hsl(182, 100%, 50%);
+    margin-top: 2rem;
+}
+
+#heading {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    word-spacing: 0.2rem;
+}
+
+#div1 {
+    width: 65%;
+    height: 7%;
+    border: 0.2rem black solid;
+    background-color: white;
+    border-radius: 0.2rem;
+}
+
+#btn {
+    width: 35%;
+    height: 2.5rem;
+    border: 0.2rem black solid;
+    margin: auto;
+    background-color: rgb(255, 0, 128) ;
+    margin-top: 1rem;
+    /* margin-left: 20rem; */
+    border-radius: 0.2rem;
+}
+
+#btn {
+    display: block;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function check(myform) {
+            if (myform.myname.value == "" || myform.myname.value == null) {
+                alert("Name is mandatory");
+                myform.myname.focus();
+                return false;
+            }
+            if (myform.mynum.value == "" || myform.mynum.value == null) {
+                alert("Phone is mandatory");
+                myform.mynum.focus();
+                return false;
+            } else {
+                return true;
+            }
+        }
+    </script>
+    <form name="formvalidate" action="welcome.html" method="get" onsubmit="return check(formvalidate)">
+        Name:
+        <br>
+        <input type="text" name="myname" id="myname">
+        <br> PhoneNumber:
+        <br>
+        <input type="number" name="mynum" id="mynum"><br>
+        <input type="submit" id="mysubmit" name="mysubmit">
+
+    </form>
+
+</body>
+
+</html>
